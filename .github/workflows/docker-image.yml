@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag dsci310-ia3-lunamgulec-docker:latest
-
+        run: docker build . --file Dockerfile --tag lunamgulec/dsci310-ia3-lunamgulec-docker:latest
+      
       - name: Push the Docker image
-        run: docker push dsci310-ia3-lunamgulec-docker:latest
+        run: docker push lunamgulec/dsci310-ia3-lunamgulec-docker:latest
